@@ -1,0 +1,126 @@
+/* ===================================================================
+   ACADEMIC MODERN TECH + PROJECT TOKENS — UISI S1 MANAJEMEN (SIM P5)
+   Topik: Praktik Mandiri RAD Tools & Proposal Proyek (Laudon Ch. 13 & 14)
+   Font: Plus Jakarta Sans (headings) + Inter (body)
+   Palette: Deep Blue (#1a365d) · Teal (#319795) · Purple (#805ad5) · Amber (#f6ad55) · Green (#38a169) · Orange (#ed8936)
+   =================================================================== */
+
+:root {
+  /* Fonts */
+  --font-head: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Spacing Grid (8px baseline) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+
+  /* Radius */
+  --radius: 16px;
+  --radius-sm: 10px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Motion */
+  --dur: 0.35s;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Responsive gutters */
+  --gutter: clamp(24px, 4.5vw, 80px);
+  --gutter-y: clamp(28px, 5vh, 64px);
+
+  /* Default theme (Academic Dark Tech Slate) */
+  --bg: #091322;
+  --bg-dark: #050b14;
+  --bg-grad-1: rgba(49, 151, 149, 0.16);
+  --bg-grad-2: rgba(128, 90, 213, 0.14);
+  --surface: rgba(16, 30, 54, 0.78);
+  --surface-2: rgba(24, 44, 78, 0.68);
+  --surface-3: rgba(38, 66, 114, 0.58);
+  --surface-hover: rgba(32, 58, 102, 0.88);
+
+  --fg: #f8fafc;
+  --fg-muted: #94a3b8;
+  --fg-faint: #64748b;
+
+  --hair: rgba(255, 255, 255, 0.12);
+  --hair-2: rgba(255, 255, 255, 0.06);
+
+  --primary: #38bdf8;
+  --primary-deep: #1a365d;
+  --secondary: #319795;
+  --secondary-bright: #38b2ac;
+  --tertiary: #805ad5;
+  --tertiary-bright: #9f7aea;
+  --accent-color: #f6ad55;
+  --success: #38a169;
+  --warning: #ed8936;
+  --coral: #fc8181;
+  --coral-deep: #e53e3e;
+
+  --accent: linear-gradient(135deg, #1a365d 0%, #319795 50%, #805ad5 100%);
+  --accent-warm: linear-gradient(135deg, #f6ad55 0%, #dd6b20 100%);
+  --accent-teal: linear-gradient(135deg, #319795 0%, #38b2ac 100%);
+  --accent-purple: linear-gradient(135deg, #805ad5 0%, #9f7aea 100%);
+  --accent-ink: #0a101d;
+
+  --shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --glow: 0 12px 36px -10px rgba(56, 189, 248, 0.35);
+  --glow-teal: 0 12px 36px -10px rgba(49, 151, 149, 0.35);
+  --glow-purple: 0 12px 36px -10px rgba(128, 90, 213, 0.35);
+
+  --grain: 0.025;
+  --vignette: rgba(5, 11, 20, 0.45);
+}
+
+/* Light Mode Overrides */
+[data-theme='light'] {
+  --bg: #f7fafc;
+  --bg-dark: #edf2f7;
+  --bg-grad-1: rgba(49, 151, 149, 0.08);
+  --bg-grad-2: rgba(26, 54, 93, 0.06);
+  --surface: rgba(255, 255, 255, 0.94);
+  --surface-2: rgba(241, 245, 249, 0.95);
+  --surface-3: rgba(226, 232, 240, 0.95);
+  --surface-hover: #ffffff;
+
+  --fg: #2d3748;
+  --fg-muted: #4a5568;
+  --fg-faint: #718096;
+
+  --hair: rgba(0, 0, 0, 0.09);
+  --hair-2: rgba(0, 0, 0, 0.05);
+
+  --primary: #1a365d;
+  --primary-deep: #0f2942;
+  --secondary: #2c7a7b;
+  --secondary-bright: #319795;
+  --tertiary: #6b46c1;
+  --tertiary-bright: #805ad5;
+  --accent-color: #d97706;
+  --success: #2f855a;
+  --warning: #dd6b20;
+  --coral: #e53e3e;
+  --coral-deep: #c53030;
+
+  --accent: linear-gradient(135deg, #1a365d 0%, #2c7a7b 50%, #6b46c1 100%);
+  --accent-warm: linear-gradient(135deg, #dd6b20 0%, #d69e2e 100%);
+  --accent-teal: linear-gradient(135deg, #2c7a7b 0%, #319795 100%);
+  --accent-purple: linear-gradient(135deg, #6b46c1 0%, #805ad5 100%);
+  --accent-ink: #ffffff;
+
+  --shadow: 0 16px 36px -12px rgba(26, 54, 93, 0.14);
+  --shadow-sm: 0 4px 12px rgba(26, 54, 93, 0.06);
+  --glow: 0 12px 30px -10px rgba(26, 54, 93, 0.2);
+  --glow-teal: 0 12px 30px -10px rgba(49, 151, 149, 0.2);
+  --glow-purple: 0 12px 30px -10px rgba(128, 90, 213, 0.2);
+
+  --grain: 0.015;
+  --vignette: rgba(241, 245, 249, 0.2);
+}
